@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<binding name="sdb_amazonaws_com_doc_2007_11_07" xmlns:tns="http://sdb.amazonaws.com/doc/2007-11-07/" force-classes="true" add-constructors="true">
+  <namespace uri="http://sdb.amazonaws.com/doc/2007-11-07/" prefix="tns" default="elements"/>
+  <mapping class="com.eucalyptus.sdb.ResponseMetadata" abstract="true">
+    <value name="RequestId" field="requestId" usage="required"/>
+    <value name="BoxUsage" field="boxUsage" usage="required"/>
+  </mapping>
+  <mapping class="com.eucalyptus.sdb.Attribute" abstract="true">
+    <value name="Name" field="name" usage="required"/>
+    <value name="Value" field="value" usage="optional"/>
+  </mapping>
+  <mapping class="com.eucalyptus.sdb.ReplaceableAttribute" abstract="true">
+    <value name="Name" field="name" usage="required"/>
+    <value name="Value" field="value" usage="required"/>
+    <value name="Replace" field="replace" usage="optional"/>
+  </mapping>
+  <mapping class="com.eucalyptus.sdb.Item" abstract="true">
+    <value name="Name" field="name" usage="required"/>
+    <collection field="attribute">
+      <structure name="Attribute" type="com.eucalyptus.sdb.Attribute"/>
+    </collection>
+  </mapping>
+  <mapping class="com.eucalyptus.sdb.ReplaceableItem" abstract="true">
+    <value name="ItemName" field="itemName" usage="required"/>
+    <collection field="attribute">
+      <structure name="Attribute" type="com.eucalyptus.sdb.ReplaceableAttribute"/>
+    </collection>
+  </mapping>
+  <mapping name="CreateDomain" class="com.eucalyptus.sdb.CreateDomainType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <value name="DomainName" field="domainName" usage="required"/>
+  </mapping>
+  <mapping name="CreateDomainResponse" class="com.eucalyptus.sdb.CreateDomainResponseType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <structure name="ResponseMetadata" field="responseMetadata" usage="required" type="com.eucalyptus.sdb.ResponseMetadata"/>
+  </mapping>
+  <mapping name="ListDomains" class="com.eucalyptus.sdb.ListDomainsType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <value name="MaxNumberOfDomains" field="maxNumberOfDomains" usage="optional"/>
+    <value name="NextToken" field="nextToken" usage="optional"/>
+  </mapping>
+  <mapping name="ListDomainsResponse" class="com.eucalyptus.sdb.ListDomainsResponseType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <structure name="ListDomainsResult" field="listDomainsResult" usage="required" type="com.eucalyptus.sdb.ListDomainsResult"/>
+    <structure name="ResponseMetadata" field="responseMetadata" usage="required" type="com.eucalyptus.sdb.ResponseMetadata"/>
+  </mapping>
+  <mapping class="com.eucalyptus.sdb.ListDomainsResult" abstract="true">
+    <collection field="domainName">
+      <value name="DomainName" type="java.lang.String"/>
+    </collection>
+    <value name="NextToken" field="nextToken" usage="optional"/>
+  </mapping>
+  <mapping name="DomainMetadata" class="com.eucalyptus.sdb.DomainMetadataType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <value name="DomainName" field="domainName" usage="required"/>
+  </mapping>
+  <mapping name="DomainMetadataResponse" class="com.eucalyptus.sdb.DomainMetadataResponseType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <structure name="DomainMetadataResult" field="domainMetadataResult" usage="required" type="com.eucalyptus.sdb.DomainMetadataResult"/>
+    <structure name="ResponseMetadata" field="responseMetadata" usage="required" type="com.eucalyptus.sdb.ResponseMetadata"/>
+  </mapping>
+  <mapping class="com.eucalyptus.sdb.DomainMetadataResult" abstract="true">
+    <value name="ItemCount" field="itemCount" usage="required"/>
+    <value name="ItemNamesSizeBytes" field="itemNamesSizeBytes" usage="required"/>
+    <value name="AttributeNameCount" field="attributeNameCount" usage="required"/>
+    <value name="AttributeNamesSizeBytes" field="attributeNamesSizeBytes" usage="required"/>
+    <value name="AttributeValueCount" field="attributeValueCount" usage="required"/>
+    <value name="AttributeValuesSizeBytes" field="attributeValuesSizeBytes" usage="required"/>
+    <value name="Timestamp" field="timestamp" usage="required"/>
+  </mapping>
+  <mapping name="DeleteDomain" class="com.eucalyptus.sdb.DeleteDomainType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <value name="DomainName" field="domainName" usage="required"/>
+  </mapping>
+  <mapping name="DeleteDomainResponse" class="com.eucalyptus.sdb.DeleteDomainResponseType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <structure name="ResponseMetadata" field="responseMetadata" usage="required" type="com.eucalyptus.sdb.ResponseMetadata"/>
+  </mapping>
+  <mapping name="PutAttributes" class="com.eucalyptus.sdb.PutAttributesType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <value name="DomainName" field="domainName" usage="required"/>
+    <value name="ItemName" field="itemName" usage="required"/>
+    <collection field="attribute">
+      <structure name="Attribute" type="com.eucalyptus.sdb.ReplaceableAttribute"/>
+    </collection>
+  </mapping>
+  <mapping name="PutAttributesResponse" class="com.eucalyptus.sdb.PutAttributesResponseType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <structure name="ResponseMetadata" field="responseMetadata" usage="required" type="com.eucalyptus.sdb.ResponseMetadata"/>
+  </mapping>
+  <mapping name="BatchPutAttributes" class="com.eucalyptus.sdb.BatchPutAttributesType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <value name="DomainName" field="domainName" usage="required"/>
+    <collection field="item">
+      <structure name="Item" type="com.eucalyptus.sdb.ReplaceableItem"/>
+    </collection>
+  </mapping>
+  <mapping name="BatchPutAttributesResponse" class="com.eucalyptus.sdb.BatchPutAttributesResponseType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <structure name="ResponseMetadata" field="responseMetadata" usage="required" type="com.eucalyptus.sdb.ResponseMetadata"/>
+  </mapping>
+  <mapping name="GetAttributes" class="com.eucalyptus.sdb.GetAttributesType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <value name="DomainName" field="domainName" usage="required"/>
+    <value name="ItemName" field="itemName" usage="required"/>
+    <collection field="attributeName">
+      <value name="AttributeName" type="java.lang.String"/>
+    </collection>
+  </mapping>
+  <mapping name="GetAttributesResponse" class="com.eucalyptus.sdb.GetAttributesResponseType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <structure name="GetAttributesResult" field="getAttributesResult" usage="required" type="com.eucalyptus.sdb.GetAttributesResult"/>
+    <structure name="ResponseMetadata" field="responseMetadata" usage="required" type="com.eucalyptus.sdb.ResponseMetadata"/>
+  </mapping>
+  <mapping class="com.eucalyptus.sdb.GetAttributesResult" abstract="true">
+    <collection field="attribute">
+      <structure name="Attribute" type="com.eucalyptus.sdb.Attribute"/>
+    </collection>
+  </mapping>
+  <mapping name="DeleteAttributes" class="com.eucalyptus.sdb.DeleteAttributesType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <value name="DomainName" field="domainName" usage="required"/>
+    <value name="ItemName" field="itemName" usage="required"/>
+    <collection field="attribute">
+      <structure name="Attribute" type="com.eucalyptus.sdb.Attribute"/>
+    </collection>
+  </mapping>
+  <mapping name="DeleteAttributesResponse" class="com.eucalyptus.sdb.DeleteAttributesResponseType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <structure name="ResponseMetadata" field="responseMetadata" usage="required" type="com.eucalyptus.sdb.ResponseMetadata"/>
+  </mapping>
+  <mapping name="Query" class="com.eucalyptus.sdb.QueryType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <value name="DomainName" field="domainName" usage="required"/>
+    <value name="QueryExpression" field="queryExpression" usage="optional"/>
+    <value name="MaxNumberOfItems" field="maxNumberOfItems" usage="optional"/>
+    <value name="NextToken" field="nextToken" usage="optional"/>
+  </mapping>
+  <mapping name="QueryResponse" class="com.eucalyptus.sdb.QueryResponseType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <structure name="QueryResult" field="queryResult" usage="required" type="com.eucalyptus.sdb.QueryResult"/>
+    <structure name="ResponseMetadata" field="responseMetadata" usage="required" type="com.eucalyptus.sdb.ResponseMetadata"/>
+  </mapping>
+  <mapping class="com.eucalyptus.sdb.QueryResult" abstract="true">
+    <collection field="itemName">
+      <value name="ItemName" type="java.lang.String"/>
+    </collection>
+    <value name="NextToken" field="nextToken" usage="optional"/>
+  </mapping>
+  <mapping name="Select" class="com.eucalyptus.sdb.SelectType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <value name="SelectExpression" field="selectExpression" usage="optional"/>
+    <value name="NextToken" field="nextToken" usage="optional"/>
+  </mapping>
+  <mapping name="SelectResponse" class="com.eucalyptus.sdb.SelectResponseType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <structure name="SelectResult" field="selectResult" usage="required" type="com.eucalyptus.sdb.SelectResult"/>
+    <structure name="ResponseMetadata" field="responseMetadata" usage="required" type="com.eucalyptus.sdb.ResponseMetadata"/>
+  </mapping>
+  <mapping class="com.eucalyptus.sdb.SelectResult" abstract="true">
+    <collection field="item">
+      <structure name="Item" type="com.eucalyptus.sdb.Item"/>
+    </collection>
+    <value name="NextToken" field="nextToken" usage="optional"/>
+  </mapping>
+  <mapping name="QueryWithAttributes" class="com.eucalyptus.sdb.QueryWithAttributesType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <collection field="attributeName">
+      <value name="AttributeName" type="java.lang.String"/>
+    </collection>
+    <value name="DomainName" field="domainName" usage="required"/>
+    <value name="QueryExpression" field="queryExpression" usage="optional"/>
+    <value name="MaxNumberOfItems" field="maxNumberOfItems" usage="optional"/>
+    <value name="NextToken" field="nextToken" usage="optional"/>
+  </mapping>
+  <mapping name="QueryWithAttributesResponse" class="com.eucalyptus.sdb.QueryWithAttributesResponseType" extends="com.eucalyptus.sdb.SdbMessage">
+    <structure map-as="com.eucalyptus.sdb.SdbMessage"/>
+    <structure name="QueryWithAttributesResult" field="queryWithAttributesResult" usage="required" type="com.eucalyptus.sdb.QueryWithAttributesResult"/>
+    <structure name="ResponseMetadata" field="responseMetadata" usage="required" type="com.eucalyptus.sdb.ResponseMetadata"/>
+  </mapping>
+  <mapping class="com.eucalyptus.sdb.QueryWithAttributesResult" abstract="true">
+    <collection field="item">
+      <structure name="Item" type="com.eucalyptus.sdb.Item"/>
+    </collection>
+    <value name="NextToken" field="nextToken" usage="optional"/>
+  </mapping>
+  <mapping class="com.eucalyptus.sdb.SdbMessage" abstract="true"/>
+</binding>

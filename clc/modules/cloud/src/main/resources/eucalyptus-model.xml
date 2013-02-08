@@ -89,6 +89,18 @@
       <bridge-component/>
       <outbound>
         <filtering-router>
+          <outbound-endpoint ref="PrivateNetworksWS" />
+          <payload-type-filter expectedType="edu.ucsb.eucalyptus.msgs.VirtualNetworkingMessage" />
+        </filtering-router>
+        <filtering-router>
+          <outbound-endpoint ref="SpotWS" />
+          <payload-type-filter expectedType="edu.ucsb.eucalyptus.msgs.SpotInstanceMessage" />
+        </filtering-router>
+        <filtering-router>
+          <outbound-endpoint ref="ReservedWS" />
+          <payload-type-filter expectedType="edu.ucsb.eucalyptus.msgs.ReservedInstanceMessage" />
+        </filtering-router>
+        <filtering-router>
           <outbound-endpoint ref="VmControlWS" />
           <payload-type-filter expectedType="edu.ucsb.eucalyptus.msgs.VmControlMessage" />
         </filtering-router>
