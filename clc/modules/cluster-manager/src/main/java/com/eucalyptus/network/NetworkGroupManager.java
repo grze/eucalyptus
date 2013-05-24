@@ -73,6 +73,7 @@ import javax.persistence.EntityTransaction;
 import org.apache.log4j.Logger;
 import com.eucalyptus.auth.principal.AccountFullName;
 import com.eucalyptus.cloud.CloudMetadatas;
+import com.eucalyptus.cloud.util.DuplicateMetadataException;
 import com.eucalyptus.cloud.util.MetadataException;
 import com.eucalyptus.context.Context;
 import com.eucalyptus.context.Contexts;
@@ -91,6 +92,8 @@ import com.eucalyptus.util.OwnerFullName;
 import com.eucalyptus.util.RestrictedTypes;
 import com.eucalyptus.util.Strings;
 import com.eucalyptus.util.TypeMappers;
+import com.eucalyptus.ws.EucalyptusWebServiceException;
+import com.eucalyptus.ws.Role;
 import com.google.common.base.Function;
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;
@@ -142,7 +145,11 @@ public class NetworkGroupManager {
       reply.setGroupId( group.getGroupId() );
       return reply;
     } catch ( final Exception ex ) {
-      throw new EucalyptusCloudException( "CreateSecurityGroup failed because: " + Exceptions.causeString( ex ), ex );
+      if ( Exceptions.isCausedBy( ex, DuplicateMetadataException.class ) ) {
+        throw new EucalyptusWebServiceException( "InvalidGroup.Duplicate", Role.Sender, "The security group '" + groupName + "' alread exists" );
+      } else {
+        throw new EucalyptusCloudException( "CreateSecurityGroup failed because: " + Exceptions.causeString( ex ), ex );
+      }
     }
   }
 
