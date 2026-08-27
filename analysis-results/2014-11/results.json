@@ -1,0 +1,826 @@
+{
+  "metadata": {
+    "snapshot_sha": "d39e88b05aa8311d59411ea105bca20fd736b254",
+    "snapshot_date": "2014-11-27T02:09:48Z",
+    "total_tracked_paths": 3403,
+    "files_analyzed": 3402,
+    "skipped_files": 1,
+    "total_attributed_lines": 713213,
+    "contributors": 70,
+    "alias_mapping": [
+      {
+        "author": "chris grzegorczyk",
+        "email": "grze@eucalyptus.com",
+        "lines": 30810
+      },
+      {
+        "author": "decker",
+        "email": "decker@hawaii",
+        "lines": 22358
+      },
+      {
+        "author": "decker",
+        "email": "decker@personal-army",
+        "lines": 18621
+      },
+      {
+        "author": "grze@eucalyptus.com",
+        "email": "",
+        "lines": 9388
+      },
+      {
+        "author": "decker",
+        "email": "decker@irony",
+        "lines": 3441
+      },
+      {
+        "author": "grze",
+        "email": "decker@irony",
+        "lines": 3430
+      },
+      {
+        "author": "root",
+        "email": "root@gibson",
+        "lines": 3025
+      },
+      {
+        "author": "root",
+        "email": "root@wilshire",
+        "lines": 973
+      },
+      {
+        "author": "root",
+        "email": "root@cc1",
+        "lines": 861
+      },
+      {
+        "author": "decker",
+        "email": "decker@internet-hate-machine",
+        "lines": 735
+      },
+      {
+        "author": "root",
+        "email": "root@thunderbird",
+        "lines": 473
+      },
+      {
+        "author": "root",
+        "email": "root@eucalyptus-00",
+        "lines": 145
+      },
+      {
+        "author": "root",
+        "email": "root@euca32",
+        "lines": 141
+      },
+      {
+        "author": "root",
+        "email": "root@z2",
+        "lines": 131
+      },
+      {
+        "author": "root",
+        "email": "root@sg",
+        "lines": 115
+      },
+      {
+        "author": "root",
+        "email": "root@linux-hpg1",
+        "lines": 101
+      },
+      {
+        "author": "decker",
+        "email": "decker@syllogism",
+        "lines": 87
+      },
+      {
+        "author": "root",
+        "email": "root@eucabuild1",
+        "lines": 77
+      },
+      {
+        "author": "root",
+        "email": "root@euca33.cs.ucsb.edu",
+        "lines": 63
+      },
+      {
+        "author": "decker",
+        "email": "decker@mako",
+        "lines": 54
+      },
+      {
+        "author": "root",
+        "email": "root@ubuntupark",
+        "lines": 52
+      },
+      {
+        "author": "root",
+        "email": "root@eucabuild2",
+        "lines": 48
+      },
+      {
+        "author": "root",
+        "email": "root@gibson.eucalyptus",
+        "lines": 39
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-51-127",
+        "lines": 37
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-26-3",
+        "lines": 21
+      },
+      {
+        "author": "root",
+        "email": "root@g-05-04.qa1.eucalyptus-systems.com",
+        "lines": 19
+      },
+      {
+        "author": "decker",
+        "email": "decker@solipsism",
+        "lines": 12
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-51-115",
+        "lines": 12
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-51-114",
+        "lines": 12
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-51-11",
+        "lines": 10
+      },
+      {
+        "author": "root",
+        "email": "root@g-05-02.qa1.eucalyptus-systems.com",
+        "lines": 8
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-23-11",
+        "lines": 8
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-26-2",
+        "lines": 6
+      },
+      {
+        "author": "root",
+        "email": "root@z1",
+        "lines": 6
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-26-4",
+        "lines": 4
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-51-47",
+        "lines": 3
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-51-108",
+        "lines": 3
+      },
+      {
+        "author": "root",
+        "email": "root@ubuntu",
+        "lines": 3
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-51-113",
+        "lines": 2
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-23-73.eucalyptus",
+        "lines": 2
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-51-130",
+        "lines": 2
+      },
+      {
+        "author": "root",
+        "email": "root@eucalyptus-03",
+        "lines": 1
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-23-71.eucalyptus",
+        "lines": 1
+      },
+      {
+        "author": "root",
+        "email": "root@gushan",
+        "lines": 1
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-51-126",
+        "lines": 1
+      },
+      {
+        "author": "grze",
+        "email": "boo@who.com",
+        "lines": 1
+      },
+      {
+        "author": "root",
+        "email": "root@eucahost-4-234.eucalyptus",
+        "lines": 1
+      },
+      {
+        "author": "root",
+        "email": "root@blueshawk",
+        "lines": 1
+      },
+      {
+        "author": "root",
+        "email": "root@linux-yjn0",
+        "lines": 1
+      }
+    ]
+  },
+  "distribution": [
+    {
+      "contributor": "Steve Jones",
+      "key": "steve.jones@eucalyptus.com",
+      "lines": 200055,
+      "percentage": 28.0498252275267,
+      "rank": 1,
+      "ratio_to_next": 2.0982002391290666
+    },
+    {
+      "contributor": "Chris Grzegorczyk",
+      "key": "Chris Grzegorczyk",
+      "lines": 95346,
+      "percentage": 13.368516838588192,
+      "rank": 2,
+      "ratio_to_next": 1.263781562727815
+    },
+    {
+      "contributor": "Garrett Holmstrom",
+      "key": "gholms@fedoraproject.org",
+      "lines": 75445,
+      "percentage": 10.5781863202157,
+      "rank": 3,
+      "ratio_to_next": 1.0329130214537041
+    },
+    {
+      "contributor": "chuck",
+      "key": "chuck@eucalyptus.com",
+      "lines": 73041,
+      "percentage": 10.241120114187487,
+      "rank": 4,
+      "ratio_to_next": 1.5219728699131088
+    },
+    {
+      "contributor": "Zach Hill",
+      "key": "zach@eucalyptus.com",
+      "lines": 47991,
+      "percentage": 6.728845379991672,
+      "rank": 5,
+      "ratio_to_next": 1.2876576334853769
+    },
+    {
+      "contributor": "Evan Thomas",
+      "key": "ethomas@eucalyptus.com",
+      "lines": 37270,
+      "percentage": 5.225647877983155,
+      "rank": 6,
+      "ratio_to_next": 1.1781999810324661
+    },
+    {
+      "contributor": "Sang-Min Park",
+      "key": "smpark.uva@gmail.com",
+      "lines": 31633,
+      "percentage": 4.435280904862923,
+      "rank": 7,
+      "ratio_to_next": 1.588241200984084
+    },
+    {
+      "contributor": "Dmitrii Zagorodnov",
+      "key": "dmitrii@eucalyptus.com",
+      "lines": 19917,
+      "percentage": 2.7925738874641937,
+      "rank": 8,
+      "ratio_to_next": 1.0992328494950052
+    },
+    {
+      "contributor": "Swathi Gangisetty",
+      "key": "swathi@eucalyptus.com",
+      "lines": 18119,
+      "percentage": 2.540475285784191,
+      "rank": 9,
+      "ratio_to_next": 1.578860230045312
+    },
+    {
+      "contributor": "wenye",
+      "key": "wenye@gushan",
+      "lines": 11476,
+      "percentage": 1.6090564810232006,
+      "rank": 10,
+      "ratio_to_next": 1.0303465613216016
+    },
+    {
+      "contributor": "Daniel Nurmi",
+      "key": "nurmi@eucalyptus.com",
+      "lines": 11138,
+      "percentage": 1.5616653089609975,
+      "rank": 11,
+      "ratio_to_next": 1.097772521190617
+    },
+    {
+      "contributor": "Neil Soman",
+      "key": "neil@eucalyptus.com",
+      "lines": 10146,
+      "percentage": 1.4225764252754787,
+      "rank": 12,
+      "ratio_to_next": 1.005550049554014
+    },
+    {
+      "contributor": "Neil",
+      "key": "neil@pall",
+      "lines": 10090,
+      "percentage": 1.414724633454522,
+      "rank": 13,
+      "ratio_to_next": 1.0937669376693766
+    },
+    {
+      "contributor": "Wes Wannemacher",
+      "key": "wes.wannemacher@eucalyptus.com",
+      "lines": 9225,
+      "percentage": 1.293442491934387,
+      "rank": 14,
+      "ratio_to_next": 1.1065131342209429
+    },
+    {
+      "contributor": "graziano obertelli",
+      "key": "graziano@cs.ucsb.edu",
+      "lines": 8337,
+      "percentage": 1.1689355073449306,
+      "rank": 15,
+      "ratio_to_next": 1.3860349127182046
+    },
+    {
+      "contributor": "Vasiliy Kochergin",
+      "key": "vasya@eucalyptus.com",
+      "lines": 6015,
+      "percentage": 0.8433665679116897,
+      "rank": 16,
+      "ratio_to_next": 1.2270501835985312
+    },
+    {
+      "contributor": "Tom Werges",
+      "key": "tom.werges@eucalyptus.com",
+      "lines": 4902,
+      "percentage": 0.6873122054701751,
+      "rank": 17,
+      "ratio_to_next": 1.0684394071490846
+    },
+    {
+      "contributor": "Garrett Holmstrom",
+      "key": "gholms@eucalyptus.com",
+      "lines": 4588,
+      "percentage": 0.6432860870455249,
+      "rank": 18,
+      "ratio_to_next": 1.0238785985271144
+    },
+    {
+      "contributor": "Matt Spaulding",
+      "key": "mspaulding06@gmail.com",
+      "lines": 4481,
+      "percentage": 0.6282835562447684,
+      "rank": 19,
+      "ratio_to_next": 1.1952520672179248
+    },
+    {
+      "contributor": "Mitch Garnaat",
+      "key": "mitch.garnaat@eucalyptus.com",
+      "lines": 3749,
+      "percentage": 0.5256494202994056,
+      "rank": 20,
+      "ratio_to_next": 1.068091168091168
+    },
+    {
+      "contributor": "Ye Wen",
+      "key": "wenye@eucalyptus.com",
+      "lines": 3510,
+      "percentage": 0.49213909449210824,
+      "rank": 21,
+      "ratio_to_next": 1.0144508670520231
+    },
+    {
+      "contributor": "Sang-Min Park",
+      "key": "spark@eucalyptus.com",
+      "lines": 3460,
+      "percentage": 0.4851285660805398,
+      "rank": 22,
+      "ratio_to_next": 1.0291493158834026
+    },
+    {
+      "contributor": "Ken Edwards",
+      "key": "ken.edwards@eucalyptus.com",
+      "lines": 3362,
+      "percentage": 0.4713879303938655,
+      "rank": 23,
+      "ratio_to_next": 1.1863091037402964
+    },
+    {
+      "contributor": "Jeff Uphoff",
+      "key": "juphoff@eucalyptus.com",
+      "lines": 2834,
+      "percentage": 0.39735675036770224,
+      "rank": 24,
+      "ratio_to_next": 1.2567627494456763
+    },
+    {
+      "contributor": "Garrett Holmstrom",
+      "key": "gholms@devzero.com",
+      "lines": 2255,
+      "percentage": 0.3161748313617391,
+      "rank": 25,
+      "ratio_to_next": 1.0978578383641675
+    },
+    {
+      "contributor": "Andy Grimm",
+      "key": "agrimm@gmail.com",
+      "lines": 2054,
+      "percentage": 0.28799250714723373,
+      "rank": 26,
+      "ratio_to_next": 1.3522053982883475
+    },
+    {
+      "contributor": "Charles Gelinas",
+      "key": "chuck@nanuk-centos.(none)",
+      "lines": 1519,
+      "percentage": 0.21297985314345083,
+      "rank": 27,
+      "ratio_to_next": 1.065217391304348
+    },
+    {
+      "contributor": "twerges",
+      "key": "twerges",
+      "lines": 1426,
+      "percentage": 0.19994027029793343,
+      "rank": 28,
+      "ratio_to_next": 1.053175775480059
+    },
+    {
+      "contributor": "graziano obertelli",
+      "key": "graziano@tx2500z",
+      "lines": 1354,
+      "percentage": 0.1898451093852748,
+      "rank": 29,
+      "ratio_to_next": 1.0280941533788914
+    },
+    {
+      "contributor": "graziano",
+      "key": "graziano@t400s",
+      "lines": 1317,
+      "percentage": 0.1846573183607141,
+      "rank": 30,
+      "ratio_to_next": 1.1314432989690721
+    },
+    {
+      "contributor": "Matt Clark",
+      "key": "mclark@eucalyptus.com",
+      "lines": 1164,
+      "percentage": 0.16320510142131453,
+      "rank": 31,
+      "ratio_to_next": 1.1043643263757115
+    },
+    {
+      "contributor": "twerges",
+      "key": "twerges@eucahost-3-120.eucalyptus",
+      "lines": 1054,
+      "percentage": 0.14778193891586383,
+      "rank": 32,
+      "ratio_to_next": 1.205949656750572
+    },
+    {
+      "contributor": "shaon",
+      "key": "mdshaonimran@gmail.com",
+      "lines": 874,
+      "percentage": 0.12254403663421727,
+      "rank": 33,
+      "ratio_to_next": 1.3242424242424242
+    },
+    {
+      "contributor": "mmunn",
+      "key": "mmunn@eucalyptus.com",
+      "lines": 660,
+      "percentage": 0.09253897503270411,
+      "rank": 34,
+      "ratio_to_next": 1.0662358642972536
+    },
+    {
+      "contributor": "twerges",
+      "key": "twerges@eucahost-4-234.eucalyptus",
+      "lines": 619,
+      "percentage": 0.08679034173521795,
+      "rank": 35,
+      "ratio_to_next": 1.4229885057471265
+    },
+    {
+      "contributor": "Dmitrii Zagorodnov",
+      "key": "dmitrii@cs.ucsb.edu",
+      "lines": 435,
+      "percentage": 0.060991597180645896,
+      "rank": 36,
+      "ratio_to_next": 1.1328125
+    },
+    {
+      "contributor": "neil",
+      "key": "neil@welfarestate",
+      "lines": 384,
+      "percentage": 0.05384085820084603,
+      "rank": 37,
+      "ratio_to_next": 1.0267379679144386
+    },
+    {
+      "contributor": "Dmitrii Zagorodnov dmitrii@eucalyptus.com",
+      "key": "dmitrii zagorodnov dmitrii eucalyptus com",
+      "lines": 374,
+      "percentage": 0.05243875251853233,
+      "rank": 38,
+      "ratio_to_next": 1.147239263803681
+    },
+    {
+      "contributor": "Vika Felmetsger",
+      "key": "rusvika@eucalyptus.com",
+      "lines": 326,
+      "percentage": 0.04570864524342658,
+      "rank": 39,
+      "ratio_to_next": 1.2164179104477613
+    },
+    {
+      "contributor": "Charles Gelinas",
+      "key": "chuck@mammoth.(none)",
+      "lines": 268,
+      "percentage": 0.03757643228600713,
+      "rank": 40,
+      "ratio_to_next": 1.2237442922374429
+    },
+    {
+      "contributor": "Andy Grimm",
+      "key": "agrimm@eucalyptus.com",
+      "lines": 219,
+      "percentage": 0.03070611444267,
+      "rank": 41,
+      "ratio_to_next": 1.1288659793814433
+    },
+    {
+      "contributor": "mmunn1",
+      "key": "mmunn1@eucalyptus.com",
+      "lines": 194,
+      "percentage": 0.027200850236885756,
+      "rank": 42,
+      "ratio_to_next": 1.2516129032258065
+    },
+    {
+      "contributor": "Neil Soman",
+      "key": "neil@darkness",
+      "lines": 155,
+      "percentage": 0.02173263807586233,
+      "rank": 43,
+      "ratio_to_next": 2.421875
+    },
+    {
+      "contributor": "kwe@eucalyptus",
+      "key": "kwe eucalyptus",
+      "lines": 64,
+      "percentage": 0.008973476366807672,
+      "rank": 44,
+      "ratio_to_next": 1.0
+    },
+    {
+      "contributor": "lwade",
+      "key": "lestertron@gmail.com",
+      "lines": 64,
+      "percentage": 0.008973476366807672,
+      "rank": 45,
+      "ratio_to_next": 1.0847457627118644
+    },
+    {
+      "contributor": "Ken Edwards",
+      "key": "kedwards@eucalyptus.com",
+      "lines": 59,
+      "percentage": 0.008272423525650822,
+      "rank": 46,
+      "ratio_to_next": 1.5945945945945945
+    },
+    {
+      "contributor": "Zach Hill",
+      "key": "zach.hill@eucalyptus",
+      "lines": 37,
+      "percentage": 0.005187791024560685,
+      "rank": 47,
+      "ratio_to_next": 1.1935483870967742
+    },
+    {
+      "contributor": "Noirin Plunkett",
+      "key": "noirin@apache.org",
+      "lines": 31,
+      "percentage": 0.004346527615172466,
+      "rank": 48,
+      "ratio_to_next": 1.2916666666666667
+    },
+    {
+      "contributor": "Tim Cramer",
+      "key": "tjcramer@eucalyptus.com",
+      "lines": 24,
+      "percentage": 0.003365053637552877,
+      "rank": 49,
+      "ratio_to_next": 1.1428571428571428
+    },
+    {
+      "contributor": "nekro",
+      "key": "nekro@deafbabe",
+      "lines": 21,
+      "percentage": 0.0029444219328587672,
+      "rank": 50,
+      "ratio_to_next": 1.105263157894737
+    },
+    {
+      "contributor": "Vic Iglesias",
+      "key": "viglesiasce@gmail.com",
+      "lines": 19,
+      "percentage": 0.0026640007963960274,
+      "rank": 51,
+      "ratio_to_next": 1.0555555555555556
+    },
+    {
+      "contributor": "coverity",
+      "key": "coverity@static.eucalyptus-systems.com",
+      "lines": 18,
+      "percentage": 0.002523790228164658,
+      "rank": 52,
+      "ratio_to_next": 1.3846153846153846
+    },
+    {
+      "contributor": "Brian Thomason",
+      "key": "brian.thomason@gmail.com",
+      "lines": 13,
+      "percentage": 0.0018227373870078082,
+      "rank": 53,
+      "ratio_to_next": 1.0833333333333333
+    },
+    {
+      "contributor": "dkavanagh",
+      "key": "dkavanagh@gmail.com",
+      "lines": 12,
+      "percentage": 0.0016825268187764385,
+      "rank": 54,
+      "ratio_to_next": 1.0909090909090908
+    },
+    {
+      "contributor": "Alin Tomescu",
+      "key": "tomescu.alin@gmail.com",
+      "lines": 11,
+      "percentage": 0.0015423162505450686,
+      "rank": 55,
+      "ratio_to_next": 1.1
+    },
+    {
+      "contributor": "John Donnelly",
+      "key": "john.donnelly@eucalyptus.com",
+      "lines": 10,
+      "percentage": 0.0014021056823136987,
+      "rank": 56,
+      "ratio_to_next": 1.1111111111111112
+    },
+    {
+      "contributor": "wenye",
+      "key": "wenye@wenye-desktop",
+      "lines": 9,
+      "percentage": 0.001261895114082329,
+      "rank": 57,
+      "ratio_to_next": 1.2857142857142858
+    },
+    {
+      "contributor": "wenye",
+      "key": "wenye@hangzhou",
+      "lines": 7,
+      "percentage": 0.000981473977619589,
+      "rank": 58,
+      "ratio_to_next": 1.1666666666666667
+    },
+    {
+      "contributor": "Harold Spencer Jr",
+      "key": "hspencer77@gmail.com",
+      "lines": 6,
+      "percentage": 0.0008412634093882193,
+      "rank": 59,
+      "ratio_to_next": 1.2
+    },
+    {
+      "contributor": "Marek Goldmann",
+      "key": "marek.goldmann@gmail.com",
+      "lines": 5,
+      "percentage": 0.0007010528411568493,
+      "rank": 60,
+      "ratio_to_next": 1.0
+    },
+    {
+      "contributor": "Oskar Senft",
+      "key": "osk@senft-net.com",
+      "lines": 5,
+      "percentage": 0.0007010528411568493,
+      "rank": 61,
+      "ratio_to_next": 1.25
+    },
+    {
+      "contributor": "mmunn1",
+      "key": "mmunn1@eucalyptus",
+      "lines": 4,
+      "percentage": 0.0005608422729254795,
+      "rank": 62,
+      "ratio_to_next": 1.3333333333333333
+    },
+    {
+      "contributor": "Tim Boudreau",
+      "key": "niftiness@gmail.com",
+      "lines": 3,
+      "percentage": 0.00042063170469410963,
+      "rank": 63,
+      "ratio_to_next": 1.5
+    },
+    {
+      "contributor": "Antti Rasinen",
+      "key": "ars@iki.fi",
+      "lines": 2,
+      "percentage": 0.00028042113646273975,
+      "rank": 64,
+      "ratio_to_next": 1.0
+    },
+    {
+      "contributor": "Michael Munn",
+      "key": "mmunn@mmunn1.(none)",
+      "lines": 2,
+      "percentage": 0.00028042113646273975,
+      "rank": 65,
+      "ratio_to_next": 1.0
+    },
+    {
+      "contributor": "Tim Cramer",
+      "key": "tjcramer@castillian",
+      "lines": 2,
+      "percentage": 0.00028042113646273975,
+      "rank": 66,
+      "ratio_to_next": 2.0
+    },
+    {
+      "contributor": "Deependra Shekhawat",
+      "key": "jeevanullas@gmail.com",
+      "lines": 1,
+      "percentage": 0.00014021056823136988,
+      "rank": 67,
+      "ratio_to_next": 1.0
+    },
+    {
+      "contributor": "Mak Kolybabi",
+      "key": "mak@kolybabi.com",
+      "lines": 1,
+      "percentage": 0.00014021056823136988,
+      "rank": 68,
+      "ratio_to_next": 1.0
+    },
+    {
+      "contributor": "neil",
+      "key": "neil@seppuku.(none)",
+      "lines": 1,
+      "percentage": 0.00014021056823136988,
+      "rank": 69,
+      "ratio_to_next": 1.0
+    },
+    {
+      "contributor": "nekro",
+      "key": "nekro@white",
+      "lines": 1,
+      "percentage": 0.00014021056823136988,
+      "rank": 70,
+      "ratio_to_next": null
+    }
+  ],
+  "skipped": [
+    {
+      "path": "clc/modules/cluster-manager/src/main/java/com/eucalyptus/compute/conversion/ImportManager.java",
+      "reason": "no attributable text lines"
+    }
+  ]
+}
