@@ -1,0 +1,20 @@
+{
+  "generated_at_utc": "2026-08-27T07:31:24.404059+00:00",
+  "repository": "eucalyptus/eucalyptus",
+  "requested_cutoff": "2014-11-30T23:59:59Z",
+  "snapshot_commit": "d39e88b05aa8311d59411ea105bca20fd736b254",
+  "snapshot_commit_timestamp": "2014-11-26T18:09:48-08:00",
+  "tracked_files": 3403,
+  "text_files_analyzed": 3395,
+  "binary_or_empty_files_skipped": 8,
+  "blame_errors": [],
+  "workers": 8,
+  "target_tokens": [
+    "grze",
+    "decker",
+    "chris",
+    "root"
+  ],
+  "all_tracked_text_total_lines": 707909,
+  "project_text_total_lines": 707831
+}

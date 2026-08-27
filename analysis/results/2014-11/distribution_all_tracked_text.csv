@@ -1,0 +1,121 @@
+rank,author_name,author_email,identity,lines,percent,target_match
+1,Steve Jones,steve.jones@eucalyptus.com,Steve Jones <steve.jones@eucalyptus.com>,199846,28.23046465,False
+2,Garrett Holmstrom,gholms@fedoraproject.org,Garrett Holmstrom <gholms@fedoraproject.org>,75445,10.65744326,False
+3,chuck,chuck@eucalyptus.com,chuck <chuck@eucalyptus.com>,73023,10.31530889,False
+4,Zach Hill,zach@eucalyptus.com,Zach Hill <zach@eucalyptus.com>,47991,6.77926118,False
+5,Evan Thomas,ethomas@eucalyptus.com,Evan Thomas <ethomas@eucalyptus.com>,37270,5.26480098,False
+6,Sang-Min Park,smpark.uva@gmail.com,Sang-Min Park <smpark.uva@gmail.com>,31605,4.46455689,False
+7,chris grzegorczyk,grze@eucalyptus.com,chris grzegorczyk <grze@eucalyptus.com>,27455,3.87832334,True
+8,decker,decker@hawaii,decker <decker@hawaii>,22358,3.15831555,True
+9,Dmitrii Zagorodnov,dmitrii@eucalyptus.com,Dmitrii Zagorodnov <dmitrii@eucalyptus.com>,19917,2.81349722,False
+10,decker,decker@personal-army,decker <decker@personal-army>,18621,2.63042284,True
+11,Swathi Gangisetty,swathi@eucalyptus.com,Swathi Gangisetty <swathi@eucalyptus.com>,18119,2.55950977,False
+12,wenye,wenye@gushan,wenye <wenye@gushan>,11476,1.62111232,False
+13,Daniel Nurmi,nurmi@eucalyptus.com,Daniel Nurmi <nurmi@eucalyptus.com>,11138,1.57336607,False
+14,Neil Soman,neil@eucalyptus.com,Neil Soman <neil@eucalyptus.com>,10146,1.43323506,False
+15,Neil,neil@pall,Neil <neil@pall>,10090,1.42532444,False
+16,grze@eucalyptus.com,,grze@eucalyptus.com,9388,1.32615915,True
+17,Wes Wannemacher,wes.wannemacher@eucalyptus.com,Wes Wannemacher <wes.wannemacher@eucalyptus.com>,9225,1.30313359,False
+18,graziano obertelli,graziano@cs.ucsb.edu,graziano obertelli <graziano@cs.ucsb.edu>,8337,1.17769374,False
+19,Vasiliy Kochergin,vasya@eucalyptus.com,Vasiliy Kochergin <vasya@eucalyptus.com>,6007,0.84855539,False
+20,Tom Werges,tom.werges@eucalyptus.com,Tom Werges <tom.werges@eucalyptus.com>,4902,0.69246188,False
+21,Garrett Holmstrom,gholms@eucalyptus.com,Garrett Holmstrom <gholms@eucalyptus.com>,4588,0.64810590,False
+22,Matt Spaulding,mspaulding06@gmail.com,Matt Spaulding <mspaulding06@gmail.com>,4481,0.63299096,False
+23,Mitch Garnaat,mitch.garnaat@eucalyptus.com,Mitch Garnaat <mitch.garnaat@eucalyptus.com>,3749,0.52958784,False
+24,Ye Wen,wenye@eucalyptus.com,Ye Wen <wenye@eucalyptus.com>,3510,0.49582644,False
+25,Sang-Min Park,spark@eucalyptus.com,Sang-Min Park <spark@eucalyptus.com>,3446,0.48678573,False
+26,decker,decker@irony,decker <decker@irony>,3441,0.48607943,True
+27,grze,decker@irony,grze <decker@irony>,3430,0.48452555,True
+28,Ken Edwards,ken.edwards@eucalyptus.com,Ken Edwards <ken.edwards@eucalyptus.com>,3362,0.47491980,False
+29,Jeff Uphoff,juphoff@eucalyptus.com,Jeff Uphoff <juphoff@eucalyptus.com>,2834,0.40033394,False
+30,Garrett Holmstrom,gholms@devzero.com,Garrett Holmstrom <gholms@devzero.com>,2255,0.31854377,False
+31,Andy Grimm,agrimm@gmail.com,Andy Grimm <agrimm@gmail.com>,2054,0.29015029,False
+32,Charles Gelinas,chuck@nanuk-centos.(none),Charles Gelinas <chuck@nanuk-centos.(none)>,1519,0.21457560,False
+33,twerges,,twerges,1426,0.20143832,False
+34,root,root@gibson,root <root@gibson>,1411,0.19931940,True
+35,graziano obertelli,graziano@tx2500z,graziano obertelli <graziano@tx2500z>,1354,0.19126752,False
+36,graziano,graziano@t400s,graziano <graziano@t400s>,1317,0.18604086,False
+37,Matt Clark,mclark@eucalyptus.com,Matt Clark <mclark@eucalyptus.com>,1164,0.16442791,False
+38,twerges,twerges@eucahost-3-120.eucalyptus,twerges <twerges@eucahost-3-120.eucalyptus>,1054,0.14888919,False
+39,root,root@wilshire,root <root@wilshire>,973,0.13744704,True
+40,root,root@cc1,root <root@cc1>,861,0.12162580,True
+41,shaon,mdshaonimran@gmail.com,shaon <mdshaonimran@gmail.com>,855,0.12077824,False
+42,decker,decker@internet-hate-machine,decker <decker@internet-hate-machine>,735,0.10382690,True
+43,mmunn,mmunn@eucalyptus.com,mmunn <mmunn@eucalyptus.com>,660,0.09323232,False
+44,twerges,twerges@eucahost-4-234.eucalyptus,twerges <twerges@eucahost-4-234.eucalyptus>,619,0.08744062,False
+45,root,root@thunderbird,root <root@thunderbird>,473,0.06681650,True
+46,Dmitrii Zagorodnov,dmitrii@cs.ucsb.edu,Dmitrii Zagorodnov <dmitrii@cs.ucsb.edu>,435,0.06144858,False
+47,neil,neil@welfarestate,neil <neil@welfarestate>,384,0.05424426,False
+48,Dmitrii Zagorodnov dmitrii@eucalyptus.com,,Dmitrii Zagorodnov dmitrii@eucalyptus.com,374,0.05283165,False
+49,Vika Felmetsger,rusvika@eucalyptus.com,Vika Felmetsger <rusvika@eucalyptus.com>,326,0.04605112,False
+50,Charles Gelinas,chuck@mammoth.(none),Charles Gelinas <chuck@mammoth.(none)>,268,0.03785797,False
+51,Andy Grimm,agrimm@eucalyptus.com,Andy Grimm <agrimm@eucalyptus.com>,219,0.03093618,False
+52,mmunn1,mmunn1@eucalyptus.com,mmunn1 <mmunn1@eucalyptus.com>,193,0.02726339,False
+53,Neil Soman,neil@darkness,Neil Soman <neil@darkness>,155,0.02189547,False
+54,root,root@eucalyptus-00,root <root@eucalyptus-00>,145,0.02048286,True
+55,root,root@euca32,root <root@euca32>,141,0.01991781,True
+56,root,root@z2,root <root@z2>,131,0.01850520,True
+57,root,root@sg,root <root@sg>,115,0.01624503,True
+58,root,root@linux-hpg1,root <root@linux-hpg1>,101,0.01426737,True
+59,decker,decker@syllogism,decker <decker@syllogism>,87,0.01228972,True
+60,root,root@eucabuild1,root <root@eucabuild1>,77,0.01087710,True
+61,kwe@eucalyptus,,kwe@eucalyptus,64,0.00904071,False
+62,lwade,lestertron@gmail.com,lwade <lestertron@gmail.com>,64,0.00904071,False
+63,root,root@euca33.cs.ucsb.edu,root <root@euca33.cs.ucsb.edu>,63,0.00889945,True
+64,Ken Edwards,kedwards@eucalyptus.com,Ken Edwards <kedwards@eucalyptus.com>,59,0.00833440,False
+65,decker,decker@mako,decker <decker@mako>,54,0.00762810,True
+66,root,root@eucabuild2,root <root@eucabuild2>,48,0.00678053,True
+67,root,root@gibson.eucalyptus,root <root@gibson.eucalyptus>,39,0.00550918,True
+68,root,root@eucahost-51-127,root <root@eucahost-51-127>,37,0.00522666,True
+69,Zach Hill,zach.hill@eucalyptus,Zach Hill <zach.hill@eucalyptus>,37,0.00522666,False
+70,Noirin Plunkett,noirin@apache.org,Noirin Plunkett <noirin@apache.org>,26,0.00367279,False
+71,Tim Cramer,tjcramer@eucalyptus.com,Tim Cramer <tjcramer@eucalyptus.com>,24,0.00339027,False
+72,nekro,nekro@deafbabe,nekro <nekro@deafbabe>,21,0.00296648,False
+73,root,root@eucahost-26-3,root <root@eucahost-26-3>,21,0.00296648,True
+74,mdshaonimran,mdshaonimran@gmail.com,mdshaonimran <mdshaonimran@gmail.com>,19,0.00268396,False
+75,root,root@g-05-04.qa1.eucalyptus-systems.com,root <root@g-05-04.qa1.eucalyptus-systems.com>,19,0.00268396,True
+76,Vic Iglesias,viglesiasce@gmail.com,Vic Iglesias <viglesiasce@gmail.com>,19,0.00268396,False
+77,coverity,coverity@static.eucalyptus-systems.com,coverity <coverity@static.eucalyptus-systems.com>,18,0.00254270,False
+78,Brian Thomason,brian.thomason@gmail.com,Brian Thomason <brian.thomason@gmail.com>,13,0.00183639,False
+79,decker,decker@solipsism,decker <decker@solipsism>,12,0.00169513,True
+80,dkavanagh,dkavanagh@gmail.com,dkavanagh <dkavanagh@gmail.com>,12,0.00169513,False
+81,root,root@eucahost-51-114,root <root@eucahost-51-114>,12,0.00169513,True
+82,root,root@eucahost-51-115,root <root@eucahost-51-115>,12,0.00169513,True
+83,Alin Tomescu,tomescu.alin@gmail.com,Alin Tomescu <tomescu.alin@gmail.com>,11,0.00155387,False
+84,John Donnelly,John.Donnelly@Eucalyptus.com,John Donnelly <John.Donnelly@Eucalyptus.com>,10,0.00141261,False
+85,root,root@eucahost-51-11,root <root@eucahost-51-11>,10,0.00141261,True
+86,wenye,wenye@wenye-desktop,wenye <wenye@wenye-desktop>,9,0.00127135,False
+87,root,root@g-05-02.qa1.eucalyptus-systems.com,root <root@g-05-02.qa1.eucalyptus-systems.com>,8,0.00113009,True
+88,wenye,wenye@hangzhou,wenye <wenye@hangzhou>,7,0.00098883,False
+89,Harold Spencer Jr,hspencer77@gmail.com,Harold Spencer Jr <hspencer77@gmail.com>,6,0.00084757,False
+90,root,root@eucahost-26-2,root <root@eucahost-26-2>,6,0.00084757,True
+91,root,root@z1,root <root@z1>,6,0.00084757,True
+92,Marek Goldmann,marek.goldmann@gmail.com,Marek Goldmann <marek.goldmann@gmail.com>,5,0.00070631,False
+93,Nóirín Plunkett,noirin@apache.org,Nóirín Plunkett <noirin@apache.org>,5,0.00070631,False
+94,Oskar Senft,osk@senft-net.com,Oskar Senft <osk@senft-net.com>,5,0.00070631,False
+95,mmunn1,mmunn1@eucalyptus,mmunn1 <mmunn1@eucalyptus>,4,0.00056504,False
+96,root,root@eucahost-26-4,root <root@eucahost-26-4>,4,0.00056504,True
+97,root,root@eucahost-51-108,root <root@eucahost-51-108>,3,0.00042378,True
+98,root,root@eucahost-51-47,root <root@eucahost-51-47>,3,0.00042378,True
+99,root,root@ubuntu,root <root@ubuntu>,3,0.00042378,True
+100,Tim Boudreau,niftiness@gmail.com,Tim Boudreau <niftiness@gmail.com>,3,0.00042378,False
+101,Antti Rasinen,ars@iki.fi,Antti Rasinen <ars@iki.fi>,2,0.00028252,False
+102,Michael Munn,mmunn@mmunn1.(none),Michael Munn <mmunn@mmunn1.(none)>,2,0.00028252,False
+103,root,root@eucahost-23-73.eucalyptus,root <root@eucahost-23-73.eucalyptus>,2,0.00028252,True
+104,root,root@eucahost-51-113,root <root@eucahost-51-113>,2,0.00028252,True
+105,root,root@eucahost-51-130,root <root@eucahost-51-130>,2,0.00028252,True
+106,root,root@ubuntupark,root <root@ubuntupark>,2,0.00028252,True
+107,Tim Cramer,tjcramer@castillian,Tim Cramer <tjcramer@castillian>,2,0.00028252,False
+108,Deependra Shekhawat,jeevanullas@gmail.com,Deependra Shekhawat <jeevanullas@gmail.com>,1,0.00014126,False
+109,grze,boo@who.com,grze <boo@who.com>,1,0.00014126,True
+110,Mak Kolybabi,mak@kolybabi.com,Mak Kolybabi <mak@kolybabi.com>,1,0.00014126,False
+111,Michael Munn,mmunn1@eucalyptus.com,Michael Munn <mmunn1@eucalyptus.com>,1,0.00014126,False
+112,neil,neil@seppuku.(none),neil <neil@seppuku.(none)>,1,0.00014126,False
+113,nekro,nekro@white,nekro <nekro@white>,1,0.00014126,False
+114,root,root@blueshawk,root <root@blueshawk>,1,0.00014126,True
+115,root,root@eucahost-23-71.eucalyptus,root <root@eucahost-23-71.eucalyptus>,1,0.00014126,True
+116,root,root@eucahost-4-234.eucalyptus,root <root@eucahost-4-234.eucalyptus>,1,0.00014126,True
+117,root,root@eucahost-51-126,root <root@eucahost-51-126>,1,0.00014126,True
+118,root,root@eucalyptus-03,root <root@eucalyptus-03>,1,0.00014126,True
+119,root,root@gushan,root <root@gushan>,1,0.00014126,True
+120,root,root@linux-yjn0,root <root@linux-yjn0>,1,0.00014126,True
