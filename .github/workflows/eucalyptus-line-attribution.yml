@@ -1,6 +1,13 @@
 name: Eucalyptus line attribution
 
 on:
+  push:
+    branches:
+      - analysis/eucalyptus-lines-2014-11-20260826
+    paths:
+      - .github/workflows/eucalyptus-line-attribution.yml
+      - analysis/eucalyptus_line_attribution.py
+      - analysis/run-attribution.txt
   workflow_dispatch:
 
 permissions:
