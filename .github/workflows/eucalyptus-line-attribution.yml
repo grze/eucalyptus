@@ -1,0 +1,39 @@
+name: Eucalyptus line attribution
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  november-2014:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout analysis branch with complete history
+        uses: actions/checkout@v4
+        with:
+          ref: analysis/eucalyptus-lines-2014-11-20260826
+          fetch-depth: 0
+
+      - name: Verify November 2014 snapshot exists
+        run: git cat-file -e d39e88b05aa8311d59411ea105bca20fd736b254^{commit}
+
+      - name: Run line-attribution analysis
+        run: |
+          rm -rf analysis/results/2014-11
+          python3 analysis/eucalyptus_line_attribution.py \
+            --repo . \
+            --commit d39e88b05aa8311d59411ea105bca20fd736b254 \
+            --out analysis/results/2014-11 \
+            --workers 8
+
+      - name: Commit result tables
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add analysis/results/2014-11
+          git diff --cached --quiet && exit 0
+          git commit -m "Add November 2014 Eucalyptus line-attribution results"
+          git push origin HEAD:analysis/eucalyptus-lines-2014-11-20260826
