@@ -24,11 +24,10 @@ jobs:
           snapshot='d39e88b05aa8311d59411ea105bca20fd736b254'
           target_tokens=('grze','decker','chris','root')
           def run(args, check=True):
-              return subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=check)
+              return subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, encoding='utf-8', errors='replace', check=check)
           files=run(['git','ls-tree','-r','--name-only',snapshot]).stdout.splitlines()
           counts=Counter(); identities=defaultdict(Counter); skipped=[]; analyzed=0
-          for i,path in enumerate(files,1):
-              # git blame identifies binary/unblamable paths through failure or empty porcelain output
+          for path in files:
               p=run(['git','blame','--line-porcelain',snapshot,'--',path], check=False)
               if p.returncode != 0:
                   skipped.append({'path':path,'reason':p.stderr.strip()[:300]}); continue
@@ -39,34 +38,28 @@ jobs:
                   elif line.startswith('\t'):
                       if author is None: continue
                       a=author.strip(); e=(email or '').strip(); low=(a+' '+e).lower()
-                      if any(tok in low for tok in target_tokens):
-                          key='Chris Grzegorczyk'
-                      else:
-                          # Merge obvious variants by normalized email when available, otherwise normalized name.
-                          key=(e.lower() if e else re.sub(r'[^a-z0-9]+',' ',a.lower()).strip())
+                      if any(tok in low for tok in target_tokens): key='Chris Grzegorczyk'
+                      else: key=(e.lower() if e else re.sub(r'[^a-z0-9]+',' ',a.lower()).strip())
                       counts[key]+=1; identities[key][(a,e)]+=1; file_lines+=1
               if file_lines: analyzed+=1
               else: skipped.append({'path':path,'reason':'no attributable text lines'})
-          # Give non-target contributors a readable representative name from their most common identity.
           rows=[]; total=sum(counts.values())
           for key,n in counts.items():
               if key=='Chris Grzegorczyk': name=key
               else:
-                  (a,e),_=identities[key].most_common(1)[0]
-                  name=a or e or key
+                  (a,e),_=identities[key].most_common(1)[0]; name=a or e or key
               rows.append({'contributor':name,'key':key,'lines':n,'percentage':100*n/total if total else 0})
           rows.sort(key=lambda r:(-r['lines'],r['contributor'].lower()))
           for idx,r in enumerate(rows):
               r['rank']=idx+1
               r['ratio_to_next']=(r['lines']/rows[idx+1]['lines']) if idx+1<len(rows) and rows[idx+1]['lines'] else None
-          aliases=[]
-          for (a,e),n in identities['Chris Grzegorczyk'].most_common(): aliases.append({'author':a,'email':e,'lines':n})
+          aliases=[{'author':a,'email':e,'lines':n} for (a,e),n in identities['Chris Grzegorczyk'].most_common()]
           meta={'snapshot_sha':snapshot,'snapshot_date':'2014-11-27T02:09:48Z','total_tracked_paths':len(files),'files_analyzed':analyzed,'skipped_files':len(skipped),'total_attributed_lines':total,'contributors':len(rows),'alias_mapping':aliases}
           os.makedirs('/tmp/ownership',exist_ok=True)
-          with open('/tmp/ownership/distribution.csv','w',newline='') as f:
+          with open('/tmp/ownership/distribution.csv','w',newline='',encoding='utf-8') as f:
               w=csv.DictWriter(f,fieldnames=['rank','contributor','lines','percentage','ratio_to_next']); w.writeheader(); w.writerows([{k:r[k] for k in w.fieldnames} for r in rows])
-          with open('/tmp/ownership/results.json','w') as f: json.dump({'metadata':meta,'distribution':rows,'skipped':skipped},f,indent=2)
-          with open('/tmp/ownership/RESULTS.md','w') as f:
+          with open('/tmp/ownership/results.json','w',encoding='utf-8') as f: json.dump({'metadata':meta,'distribution':rows,'skipped':skipped},f,indent=2)
+          with open('/tmp/ownership/RESULTS.md','w',encoding='utf-8') as f:
               f.write('# Eucalyptus line ownership — November 2014 month-end snapshot\n\n')
               f.write(f"Snapshot: `{snapshot}` (2014-11-27T02:09:48Z)\n\n")
               f.write(f"Attributed lines: **{total:,}** across **{analyzed:,}** files; skipped paths: **{len(skipped):,}**.\n\n")
